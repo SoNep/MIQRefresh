@@ -29,8 +29,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
-        MobileAds.initialize(this) {}
-        binding.adView.loadAd(AdRequest.Builder().build())
         setBtn()
     }
 
