@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MIQ</string>
+    <string name="start">Start</string>
+    <string name="avalible_dates">Avalible Dates</string>
+    <string name="progress">Progress</string>
+    <string name="response_code">Response Code</string>
+    <string name="was_available">Was available @</string>
+    <string name="finish">Finish</string>
+    <string name="Error">Error</string>
+</resources>

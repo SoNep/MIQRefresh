@@ -1,0 +1,2 @@
+rootProject.name = "MIQ Refresh"
+include ':app'
