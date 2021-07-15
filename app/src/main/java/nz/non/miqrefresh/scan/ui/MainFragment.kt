@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
@@ -50,7 +52,8 @@ class MainFragment : Fragment() {
                 binding.startBtn.text = getString(nz.non.miqrefresh.R.string.stop)
                 binding.startTime.text = getCurrentTime()
 
-                viewModel.startScan(!binding.isMiq.isChecked).observe(viewLifecycleOwner) { upgradeResult(it) }
+                viewModel.startScan(!binding.isMiq.isChecked)
+                    .observe(viewLifecycleOwner) { upgradeResult(it) }
             } else {
                 binding.isMiq.visibility = View.VISIBLE
                 binding.startBtn.text = getString(nz.non.miqrefresh.R.string.start)
